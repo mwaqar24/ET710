@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightblue;
+        }
+        td:nth-child(even) {
+            background-color: lightgray;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Four images inside a figure container -->
+    <figure style="display: flex;" >
+        <a href="https://www.adidas.com/us" target="_blank">
+            <img src="images/adidas.jpg"  style="border-style: solid; border-width: 4px;border-color: darkgrey;"alt="Adidas Logo" width="200" height="200">
+            <figcaption>Adidas</figcaption>
+        </a>
+        
+        <a href="https://www.apple.com/iphone" target="_blank">
+            <img src="images/apple.png" style="border-style: solid; border-width: 4px;border-color: darkgrey;" alt="Apple Logo" width="200" height="200">
+            <figcaption>Apple</figcaption>
+        </a>
+        
+        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjhs5Xy0raLAxWLpoMHHUv9KH0YABAAGgJlZg&co=1&ase=2&gclid=CjwKCAiAwaG9BhAREiwAdhv6Y5kdfyq-kDgwOraOa4aAvgD22kJ15VpneZI-Atm4b4TnExzwDXlLnRoCtBMQAvD_BwE&ohost=www.google.com&cid=CAESVeD2gXPTM7oSXpBf1Db-xUKZiz4zAyxKLzZp-7viRHCStrtPHMQn2MeSPMeFTWGHfbubIT2Eet3BRLrWTD8bOGFioN4N3-S83Cod1on9qNmyXjQRbzY&sig=AOD64_2hl7xP7VxiL-0wc2LfoZW_ukyHFw&q&nis=4&adurl&ved=2ahUKEwj4so7y0raLAxVSwAIHHQg3KFcQ0Qx6BAgIEAE" target="_blank">
+            <img src="images/polo.jpg" style="border-style: solid; border-width: 4px;border-color: darkgrey;" alt="Polo Logo" width="200" height="200">
+            <figcaption>Polo</figcaption>
+        </a>
+        
+        <a href="https://www.louisvuitton.com/?srsltid=AfmBOoq_FvOdLQTByx5PF2k9vGdxZ6YkxtwU9ux9T-ZG3prCFelNMv4b" target="_blank">
+            <img src="images/lv.png" style="border-style: solid; border-width: 4px;border-color: darkgrey;" alt="Louis Vuitton Logo" width="200" height="200">
+            <figcaption>Louis Vuitton</figcaption>
+        </a>
+        
+        <figcaption><p>Visit <a href="https://www.example.com" target="_blank">this external link</a> for more details.</p></figcaption>
+    </figure>
+    
+    
+    
+
+    <!-- Internal Links -->
+     <h3>Internal Links</h3>
+    <nav>
+        <a href="#section1">view definition Title</a> | 
+        <a href="#section2">Go to footer</a> | 
+        <a href="#section3">table</a>
+    </nav>
+
+    <!-- Definition List -->
+    <section id="section1">
+    <dl>
+        <dt><b><i>Definition Title</i></b></dt>
+        <dd>This is the description of the term.</dd>
+    </dl>
+    </section>
+    <!-- Table with background colors -->
+    <section id="section3">
+        <h3>Table</h3> 
+    <table>
+        <tr>
+            <th colspan="2">Main Title</th>
+        </tr>
+        <tr>
+            <td><b>Subtitle 1</b></td>
+            <td>Content 1</td>
+        </tr>
+        <tr>
+            <td><b>Subtitle 2</b></td>
+            <td>Content 2</td>
+        </tr>
+    </table>
+    </section>
+
+    <!-- Unordered List -->
+     <h3>Unordered List</h3>
+    <ul>
+        <li>Watch</li>
+        <li>Shirt</li>
+        <li>Tie</li>
+    </ul>
+
+    <!-- External Link to Google Maps -->
+    <p>Find us on <a href="https://www.google.com/maps" target="_blank">Google Maps</a>.</p>
+
+    <!-- Footer -->
+    <h3>Footer below</h3>
+    <section id="section2">
+    <footer>
+         Anas Waqar Website. All rights reserved.
+    </footer>
+    </section>
+</body>
+</html>
