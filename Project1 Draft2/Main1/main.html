@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            gap: 40px; /* Increased spacing between image and text */
+        }
+        img {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin: 50px;
+        }
+        .text {
+            flex: 1;
+            padding: 20px;
+            text-align: justify;
+        }
+        button {
+            padding: 12px 18px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .climate-btn {
+            background-color: red;
+        }
+        .initiative-btn {
+            background-color: blue;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Climate Change</h1>
+    <div class="container">
+        <img src="/images/fire.jpeg" alt="Climate Change Effects">
+        <div class="text">
+            <h2>Climate Change and Its Impact</h2>
+            <p>Climate change is drastically altering our environment, leading to rising temperatures, unpredictable weather patterns, and natural disasters. From forest fires to extreme droughts, the consequences are visible worldwide. 
+            Human activities such as deforestation and excessive carbon emissions accelerate these changes, making urgent action necessary.</p>
+            <button class="climate-btn" onclick="location.href='session1.html'">Read More</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text">
+            <h2>Initiatives to Combat Climate Change</h2>
+            <p>While climate change poses a major threat, several initiatives can help mitigate its effects. Renewable energy adoption, afforestation programs, and sustainable living practices are crucial steps toward a healthier planet. 
+            Global organizations and individuals alike must work together to reduce carbon footprints and promote eco-friendly policies.</p>
+            <button class="initiative-btn" onclick="location.href='session2.html'">Initiatives</button>
+        </div>
+        <img src="/images/ice.jpeg" alt="Sustainable Initiatives">
+    </div>
+    <footer>
+        <p>&copy; 2024 Climate Awareness. All rights reserved.</p>
+    </footer>
+   
+</body>
+</html>
