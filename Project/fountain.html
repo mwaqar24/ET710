@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colosseum</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        .page-header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            font-size: 15px;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .content {
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+           
+        }
+
+        .description {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Footer */
+        .page-footer {
+            background-color:black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="page-header">
+        <a href="home.html" class="back-button">←</a>
+        <h1>Trevi Fountain</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="content">
+        <div class="image-container">
+            <img src="/images/trevi2.jpg" alt="Trevi Fountain">
+        </div>
+        <div class="description">
+            <p>
+                The Trevi Fountain (Fontana di Trevi) is one of the most famous fountains in the world, located in Rome, Italy. Built in 1762, it features a stunning Baroque design with intricate sculptures of Neptune (God of the Sea), flanked by Tritons and sea horses.
+
+                Legend says that throwing a coin over your left shoulder into the fountain ensures your return to Rome. Every day, thousands of tourists take part in this tradition, contributing to the fountain’s collected coins, which are donated to charity.
+                
+                With its grand architecture and mesmerizing water displays, the Trevi Fountain remains a must-visit landmark, symbolizing Rome's artistic and cultural heritage.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="page-footer">
+        <p>© 2024 Rome Travel Guide | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

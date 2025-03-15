@@ -1,0 +1,375 @@
+
+
+/* Navbar */
+.navbar {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Centering content */
+    padding: 15px 20px;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Flag Animation */
+.flag {
+    width: 60px;
+    height: auto;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: flagMove 1.5s ease-out forwards;
+}
+
+/* Text Animation */
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;  /* Centering text */
+    margin-left: 5px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: textMove 1.5s ease-out forwards 1s;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 1;
+}
+
+/* Ensuring Equal Spacing */
+.navbar > * {
+    margin: 0 10px; /* Adds equal spacing on both sides */
+}
+
+/* Keyframes for Animations */
+@keyframes flagMove {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes textMove {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Intro Section (BELOW NAVBAR) */
+.animation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    position: relative;
+    background: url('/images/introImg.jpg') no-repeat center center/cover;
+}
+
+/* Dot that transforms into a line */
+.dot-line {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: -8px;  /* Move closer to text */
+    animation: dotToLine 1.5s ease-in-out forwards, lineDisappear 1s ease-in-out 3s forwards;
+}
+
+/* Text appears from the line */
+.animated-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(20px); /* Start lower */
+    animation: textAppear 1.5s ease-in-out forwards 1.5s;
+}
+
+/* Buttons remain in position */
+.buttons {
+    margin-top: 50px; /* Adjusted spacing */
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Keyframes for dot to line animation */
+@keyframes dotToLine {
+    0% {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    50% {
+        width: 200px;
+        height: 2px;
+        border-radius: 0;
+    }
+    100% {
+        width: 400px;
+        height: 2px;
+        border-radius: 0;
+    }
+}
+
+/* Keyframes for text appearing from the line */
+@keyframes textAppear {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-70px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-95px); /* Moves up from the line */
+    }
+}
+
+/* Keyframes for line disappearing */
+@keyframes lineDisappear {
+    0% {
+        width: 400px;
+        height: 2px;
+    }
+    100% {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        opacity: 0;
+    }
+}
+
+/* Colosseum,Trevi */
+.colosseum ,.trevi {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    padding: 0 5%;
+    
+}
+
+.content {
+    flex: 1;
+    color: black;
+    text-align: center;
+    max-width: 50%;
+    margin: 30px;
+}
+
+.content h2 {
+    font-size:xx-large;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: large;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.read-more {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    transition: background 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: darkred;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image img:hover {filter: invert(1);
+}
+
+
+
+/* Rome Info Section */
+#rome-info {
+   
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.news-feed, .upcoming-events {
+    width: 45%;
+}
+
+.info-heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p, .event-list li {
+    font-size: 14px;
+    color: #444;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+
+.event-list li {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+/* Trip Cost Section */
+#trip-cost {
+    width: 50%;
+    
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-header {
+    background-color: #b90e09;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.cost-table th, .cost-table td {
+    border: 1px solid #000000;
+    padding: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cost-table th  .table-header {
+    background-color: #a82626;
+}
+
+.total-row td {
+    padding: 15px;
+    font-weight: bold;
+    background-color: #e7e3e3;
+}
+
+
+
+
+/* Footer Section */
+#site-footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+.footer-center h4, .footer-right h4 {
+    margin-bottom: 8px;
+}
+
+.footer-right a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: invert(1); /* Makes icons white */
+}
