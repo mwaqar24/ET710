@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .row-header div {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .col-5 {
+            background: #d63384;
+        }
+
+        /* Pink */
+        .col-7 {
+            background: #198754;
+        }
+
+        /* Green */
+        .left-col {
+            background: #dc3545;
+        }
+
+        /* Red */
+        .medium-col {
+            background: #20c997;
+        }
+
+        /* Teal */
+        .right-col {
+            background: #ffc107;
+        }
+
+        /* Yellow */
+        .card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .modal-header {
+            justify-content: flex-start;
+        }
+
+        .btn-close {
+            margin-right: auto;
+        }
+        .modal-body {
+            max-height: 70vh;
+            overflow-y: auto;
+          }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+      
+        <!-- Cards Section -->
+        <div class="row mt-3">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="/images/dog.webp" class="card-img-top" alt="Dog" />
+                    <div class="card-body">
+                        <h5 class="card-title">Dogs</h5>
+                        <p class="card-text">
+                            Dogs are friendly pets with unique characteristics.
+                        </p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dogModal">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="/images/fish.jpeg" class="card-img-top" alt="Fish" />
+                    <div class="card-body">
+                        <h5 class="card-title">Fish</h5>
+                        <p class="card-text">
+                            Fish are aquatic creatures with different species.
+                        </p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fishModal">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="/images/cat.jpeg" class="card-img-top" alt="Cat" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cats</h5>
+                        <p class="card-text">
+                            Cats are independent yet affectionate pets.
+                        </p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#catModal">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dog Modal -->
+        <div class="modal fade" id="dogModal" tabindex="-1" aria-labelledby="dogModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-between">
+                        <h5 class="modal-title" id="dogModalLabel">Dogs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        Dogs are friendly pets with unique characteristics. They are known for their loyalty, affection,    
+                        and intelligence, making them popular household pets.they can be trained to perform various tasks, such as guiding the visually impaired, assisting in search and rescue operations, and providing companionship.
+                        Dogs come in various breeds, each with its own unique traits and characteristics. They require regular exercise, a balanced diet, and proper grooming to maintain their health and well-being.    
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <img src="/images/dog.webp" class="img-fluid rounded" alt="dog" />
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <img src="/images/dog2.jpeg" class="img-fluid rounded" alt="dog img2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-end">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fish Modal -->
+        <div class="modal fade" id="fishModal" tabindex="-1" aria-labelledby="fishModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-between">
+                        <h5 class="modal-title" id="fishModalLabel">Fish</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Fish are aquatic animals that live in water. They have gills for breathing and fins for
+                            swimming. Fish come in various shapes, sizes, and colors, and they play a crucial role in
+                            aquatic ecosystems.
+                            They are also a significant source of food for humans and other animals.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <img src="/images/fish.jpeg" class="img-fluid rounded" alt="Cat Sleeping" />
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <img src="/images/fish2.jpeg" class="img-fluid rounded" alt="Cat Licking Paw" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-end">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cat Modal -->
+    <div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                    <h5 class="modal-title" id="catModalLabel">Cats</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        The cat is a domestic species of small carnivorous mammal. It is the only
+                        domesticated species in the family Felidae and is often referred to as the
+                        domestic cat to distinguish it from the wild members of the family.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <img src="/images/cat.jpeg" class="img-fluid rounded" alt="Cat " />
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <img src="/images/cat2.jpeg" class="img-fluid rounded" alt="Cat Img2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-end">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
